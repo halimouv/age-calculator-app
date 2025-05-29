@@ -28,7 +28,7 @@ Age Calculator is a simple Android application that calculates your age based on
 ## Download APK
 
 Download the latest APK here:  
-[Age Calculator APK](assets/age-calculator.apk)
+[Age Calculator APK](https://github.com/halimouv/age-calculator-app/releases/)
 
 ---
 
