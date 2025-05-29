@@ -1,0 +1,255 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#131313"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/main_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="AGE CALCULATOR"
+			android:textSize="18sp"
+			android:textColor="#03A9F4" />
+		<LinearLayout
+			android:id="@+id/age_parameters_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="3dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/title_year"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Year"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+				<EditText
+					android:id="@+id/input_year"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#2196F3"
+					android:hint="Year"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned"
+					android:imeOptions="actionNext"
+					android:background="@drawable/derra_gui_inputs" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/title_month"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Month"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+				<EditText
+					android:id="@+id/input_month"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#2196F3"
+					android:hint="Month"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned"
+					android:imeOptions="actionNext"
+					android:background="@drawable/derra_gui_inputs" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="3dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/title_day"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Day"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+				<EditText
+					android:id="@+id/input_day"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#2196F3"
+					android:hint="Day"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned"
+					android:background="@drawable/derra_gui_inputs" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/dgui_err_msg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:text="ERR MESSAGE: [DGUI-#0000] No Issues Found"
+			android:textSize="12sp"
+			android:textColor="#F44336" />
+		<Button
+			android:id="@+id/button_calc"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Calculate my age"
+			android:textSize="14sp"
+			android:textColor="#000000"
+			android:background="@drawable/derra_gui_buttons" />
+		<TextView
+			android:id="@+id/dgui_ageresult"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Your age is : 0"
+			android:textSize="20sp"
+			android:textColor="#F5F5F5" />
+		<LinearLayout
+			android:id="@+id/dgui_bottom_section"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="bottom"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="CREATOR SECTION:"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<LinearLayout
+				android:id="@+id/github_projectlink"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:layout_marginBottom="4dp"
+				android:padding="12dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/derra_gui_inputs">
+				<ImageView
+					android:id="@+id/dgui_link_img"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/ic_link_blue"
+					android:scaleType="centerInside" />
+				<LinearLayout
+					android:id="@+id/dgui_projectlink_r_section"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:layout_weight="1">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Project Link"
+						android:textSize="14sp"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+				<ImageView
+					android:id="@+id/imageview4"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:src="@drawable/ic_chevron_left_white"
+					android:scaleType="centerInside"
+					android:rotation="180" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dgui_github"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:layout_marginBottom="4dp"
+				android:padding="12dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/derra_gui_inputs">
+				<ImageView
+					android:id="@+id/dgui_github_img"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/ic_github_blue"
+					android:scaleType="centerInside" />
+				<LinearLayout
+					android:id="@+id/dgui_github_r_section"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:layout_weight="1">
+					<TextView
+						android:id="@+id/github_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Github Profile :"
+						android:textSize="14sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/dgui_halimouv"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@halimouv"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#2196F3" />
+				</LinearLayout>
+				<ImageView
+					android:id="@+id/imageview2"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:src="@drawable/ic_chevron_left_white"
+					android:scaleType="centerInside"
+					android:rotation="180" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="APP VERSION : 1.0:2025.29.05"
+				android:textSize="10sp"
+				android:textColor="#2196F3" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
